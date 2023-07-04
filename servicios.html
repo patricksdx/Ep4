@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/c888b7b310.js" crossorigin="anonymous"></script>
+</head>
+
+<script>
+    function menu() {
+        var x = document.querySelector(".topnav1");
+        if (x.className === "topnav1") {
+            x.className += " topnav2";
+        } else {
+            x.className = "topnav1";
+        }
+    }
+</script>
+
+<body>
+
+    <header>
+        <div id="header">
+            <div id="logo">
+                <a href="index.html">
+                    <i class="fa-solid fa-paw"> </i>
+                    AmigosPeludos
+                </a>
+            </div>
+            <div id="icons">
+                <a href="javascript:void(0)" onclick="menu()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <nav class="topnav1">
+                <a href="mascotas.html">Mascotas</a>
+                <a href="blog.html">Blog</a>
+                <a href="contactanos.html">Contactanos</a>
+                <a href="servicios.html">Servicios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="banner">
+        <div>
+            <h1>Nuestros servicios</h1>
+        </div>
+    </div>
+
+    <main>
+        <section>
+            <div class="baño-mascotas">
+                <div class="elementos-baño">
+                    <h3>Baño de mascotas</h3>
+                    <p>
+                        En nuestra empresa nos dedicamos a brindar servicios de baño y cuidado para tus queridas
+                        mascotas. Nuestro objetivo es proporcionarles una experiencia agradable y relajante mientras los
+                        preparamos para que luzcan radiantes.
+                    </p>
+                </div>
+                <div class="elementos-baño">
+                    <div class="img-baño">
+                        <img src="img/perro-baño.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="elementos-tarifa">
+            <h3>Tarifario</h3>
+            <div class="custom-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tamaño</th>
+                            <th>Tiempo</th>
+                            <th>Especialista</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Grande</td>
+                            <td>Largo</td>
+                            <td>John Doe</td>
+                            <td>$120</td>
+                        </tr>
+
+                        <tr>
+                            <td>Medianos</td>
+                            <td>Medio</td>
+                            <td>Jane Doe</td>
+                            <td>$100</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pequeños</td>
+                            <td>corto</td>
+                            <td>Gary Barlow</td>
+                            <td>$20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <section>
+            <div class="baño-mascotas">
+                <div class="elementos-baño">
+                    <div class="img-baño">
+                        <img src="img/mascotas-revision-veterinaria-antes-vacaciones-1280x720x80xX.jpg" alt="">
+                    </div>
+                </div>
+                <div class="elementos-baño">
+                    <h3>Revisión medica</h3>
+                    <p>
+                        En nuestra empresa nos dedicamos a brindar servicios de baño y cuidado para tus queridas
+                        mascotas. Nuestro objetivo es proporcionarles una experiencia agradable y relajante mientras los
+                        preparamos para que luzcan radiantes.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="baño-mascotas">
+                <div class="elementos-baño">
+                    <h3>Reservas</h3>
+                    <p>
+                        En nuestra empresa nos dedicamos a brindar servicios de baño y cuidado para tus queridas
+                        mascotas. Nuestro objetivo es proporcionarles una experiencia agradable y relajante mientras los
+                        preparamos para que luzcan radiantes.
+                    </p>
+                </div>
+                <div class="elementos-baño">
+                    <div class="img-baño">
+                        <video autoplay muted loop id="myVideo" controls>
+                            <source src="media/funcion de refugio.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="tienda">
+            <div id="redes-sociales">
+                <a href="#"> <i class="fa-brands fa-facebook"></i> Facabook</a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i> Twitter</a>
+            </div>
+            <p>
+                &copy; 2023. TIENDA DE MASCOTAS.
+            </p>
+        </div>
+        <div id="llamanos">
+            <div>
+                <h4>Contactanos</h4>
+                <a href="https://api.whatsapp.com/send?phone=51999888777" target="_blank">+51 999 888 777</a>
+            </div>
+            <div class="texto-contactanos">
+                <p>Siempre juntos por los animales</p>
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="mascotas-servicios">
+            <div>
+                <h4>Mascotas que buscan adopcion</h4>
+                <a href="mascotas.html">Perros</a>
+                <a href="mascotas.html">Gatos</a>
+                <a href="mascotas.html">Conejos</a>
+                <a href="mascotas.html">Aves</a>
+                <a href="mascotas.html">Exoticos</a>
+            </div>
+            <div>
+                <h4>Servicios</h4>
+                <a href="servicios.html">Baño a las mascotas</a>
+                <a href="servicios.html">Revisión medica</a>
+                <a href="servicios.html">Reservas</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    var imagenesFondo = ['./img/gif2.gif', './img/gif3.gif', './img/gif4.gif', './img/gif1.gif'];
+    var index = 0;
+
+    function cambiarFondo() {
+        document.getElementById('banner').style.backgroundImage = "url('" + imagenesFondo[index] + "')";
+        index++;
+        if (index === imagenesFondo.length) {
+            index = 0;
+        }
+    }
+
+    setInterval(cambiarFondo, 3000);
+</script>
+
+</html>

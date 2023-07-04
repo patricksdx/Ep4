@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/c888b7b310.js" crossorigin="anonymous"></script>
+</head>
+
+<script>
+    function menu() {
+        var x = document.querySelector(".topnav1");
+        if (x.className === "topnav1") {
+            x.className += " topnav2";
+        } else {
+            x.className = "topnav1";
+        }
+    }
+</script>
+
+<body>
+
+    <header>
+        <div id="header">
+            <div id="logo">
+                <a href="index.html">
+                    <i class="fa-solid fa-paw"></i>
+                    AmigosPeludos
+                </a>
+            </div>
+            <div id="icons">
+                <a href="javascript:void(0)" onclick="menu()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <nav class="topnav1">
+                <a href="mascotas.html">Mascotas</a>
+                <a href="blog.html">Blog</a>
+                <a href="contactanos.html">Contactanos</a>
+                <a href="servicios.html">Servicios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="banner">
+        <div>
+          <h1>Nuestro Blog</h1>
+        </div>
+    </div>
+
+    <main>
+        
+        <h2 class="texto-blog">Nuestras Recomendaciones</h2>
+        <section class="section-blog">
+            <article class="article-card">
+                <img
+                  src="img/gato-ronroneo.jpg"
+                  class="card-image"
+                />
+              
+                <div class="card-content">
+                  <time datetime="2022-10-10" class="card-date">
+                    10th Oct 2022
+                  </time>
+              
+                  <a href="blog.html" class="card-title-link">
+                    <h3 class="card-title">
+                        ¿Por qué los gatos ronronean?
+                    </h3>
+                  </a>
+              
+                  <p class="card-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                    dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+                    sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+                    voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+                    Molestias explicabo corporis voluptatem?
+                  </p>
+                </div>
+              </article>
+              <article class="article-card">
+                <img
+                  src="img/navidad-perro.jpg"
+                  class="card-image"
+                />
+              
+                <div class="card-content">
+                  <time datetime="2022-10-10" class="card-date">
+                    10th Oct 2022
+                  </time>
+              
+                  <a href="blog.html" class="card-title-link">
+                    <h3 class="card-title">
+                      Navidad segura para nuestros perros
+                    </h3>
+                  </a>
+              
+                  <p class="card-description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                    dolores, possimus pariatur animi temporibus nesciunt praesentium dolore
+                    sed nulla ipsum eveniet corporis quidem, mollitia itaque minus soluta,
+                    voluptates neque explicabo tempora nisi culpa eius atque dignissimos.
+                    Molestias explicabo corporis voluptatem?
+                  </p>
+                </div>
+              </article>
+        </section>
+
+        <section class="blog-pequeño">
+            <div class="noticias-relevantes">
+                <a href="./blog.html" class="custom-card">
+                    <img
+                      src="img/bebes-animales.jpg"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">noticia 1</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="noticias-relevantes">
+                <a href="./blog.html" class="custom-card">
+                    <img
+                      src="img/cobaya-comiendo.jpg"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">noticia 2</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="noticias-relevantes">
+                <a href="./blog.html" class="custom-card">
+                    <img
+                      src="img/cuidados-gato-calor.jpg"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">noticia 3</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="noticias-relevantes">
+                <a href="./blog.html" class="custom-card">
+                    <img
+                      src="img/que-comen-las-tortugas-de-tierra-1.jpg"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">noticia 4</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="tienda">
+            <div id="redes-sociales">
+                <a href="#"> <i class="fa-brands fa-facebook"></i> Facabook</a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i> Twitter</a>
+            </div>
+            <p>
+                &copy; 2023. TIENDA DE MASCOTAS.
+            </p>
+        </div>
+        <div id="llamanos">
+            <div>
+                <h4>Contactanos</h4>
+                <a href="https://api.whatsapp.com/send?phone=51999888777" target="_blank">+51 999 888 777</a>
+            </div>
+            <div class="texto-contactanos">
+                <p>Siempre juntos por los animales</p>
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="mascotas-servicios">
+            <div>
+                <h4>Mascotas que buscan adopcion</h4>
+                <a href="mascotas.html">Perros</a>
+                <a href="mascotas.html">Gatos</a>
+                <a href="mascotas.html">Conejos</a>
+                <a href="mascotas.html">Aves</a>
+                <a href="mascotas.html">Exoticos</a>
+            </div>
+            <div>
+                <h4>Servicios</h4>
+                <a href="servicios.html">Baño a las mascotas</a>
+                <a href="servicios.html">Revisión medica</a>
+                <a href="servicios.html">Reservas</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+  var imagenesFondo = ['./img/gif2.gif','./img/gif3.gif','./img/gif4.gif','./img/gif1.gif'];
+  var index = 0;
+
+  function cambiarFondo() {
+    document.getElementById('banner').style.backgroundImage = "url('" + imagenesFondo[index] + "')";
+    index++;
+    if (index === imagenesFondo.length) {
+      index = 0;
+    }
+  }
+
+  setInterval(cambiarFondo, 3000);
+</script>
+
+</html>

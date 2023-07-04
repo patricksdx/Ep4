@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/c888b7b310.js" crossorigin="anonymous"></script>
+</head>
+
+<script>
+    function menu() {
+        var x = document.querySelector(".topnav1");
+        if (x.className === "topnav1") {
+            x.className += " topnav2";
+        } else {
+            x.className = "topnav1";
+        }
+    }
+</script>
+
+<body>
+
+    <header>
+        <div id="header">
+            <div id="logo">
+                <a href="index.html">
+                    <i class="fa-solid fa-paw"></i>
+                    AmigosPeludos
+                </a>
+            </div>
+            <div id="icons">
+                <a href="javascript:void(0)" onclick="menu()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <nav class="topnav1">
+                <a href="mascotas.html">Mascotas</a>
+                <a href="blog.html">Blog</a>
+                <a href="contactanos.html">Contactanos</a>
+                <a href="servicios.html">Servicios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="banner">
+        <div>
+            <h1>Adopta una amigo peludo</h1>
+        </div>
+    </div>
+
+    <main>
+
+        <!-- Control buttons -->
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+            <button class="btn" onclick="filterSelection('perros')">Perros</button>
+            <button class="btn" onclick="filterSelection('gatos')">Gatos</button>
+            <button class="btn" onclick="filterSelection('conejos')">Conejos</button>
+            <button class="btn" onclick="filterSelection('aves')">Aves</button>
+            <button class="btn" onclick="filterSelection('exoticos')">Exoticos</button>
+        </div>
+
+        <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+        <div class="container-slider">
+            <div class="filterDiv perros">
+                <a href="./mascotas.html" class="custom-card">
+                    <img
+                      src="img/Dalmata.jpg"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">Dalmata</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="filterDiv perros">
+                <a href="./mascotas.html" class="custom-card">
+                    <img
+                      src="img/perro-sierra.png"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">Perro serrano</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="filterDiv perros">
+                <a href="./mascotas.html" class="custom-card">
+                    <img
+                      src="img/dogo argentino.webp"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">Doggo Argentino</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="filterDiv perros">
+                <a href="./mascotas.html" class="custom-card">
+                    <img
+                      src="img/Borzoi.webp"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">Borzoi</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="filterDiv gatos">
+                <a href="./mascotas.html" class="custom-card">
+                    <img
+                      src="img/persa.webp"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">Gato Persa</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="filterDiv gatos">
+                <a href="./mascotas.html" class="custom-card">
+                    <img
+                      src="img/gatoconbotas.jpg"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">Gato</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="filterDiv gatos">
+                <a href="./mascotas.html" class="custom-card">
+                    <img
+                      src="img/Sphynx.jpg"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">Sphynx</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="filterDiv conejos">
+                <a href="./mascotas.html" class="custom-card">
+                    <img
+                      src="img/conejo.jpg"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">Conejo Minilop</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="filterDiv aves">
+                <a href="./mascotas.html" class="custom-card">
+                    <img
+                      src="img/loro.jpg"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">Loro</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="filterDiv aves">
+                <a href="./mascotas.html" class="custom-card">
+                    <img
+                      src="img/tucan.jpg"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">Tucan</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="filterDiv aves">
+                <a href="./mascotas.html" class="custom-card">
+                    <img
+                      src="img/perico.jpg"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">Perico</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+
+            <div class="filterDiv exoticos">
+                <a href="./mascotas.html" class="custom-card">
+                    <img
+                      src="img/camaleon.jpg"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">Camaleón</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            <div class="filterDiv exoticos">
+                <a href="./mascotas.html" class="custom-card">
+                    <img
+                      src="img/charapa.jpg"
+                      class="custom-image"
+                    />
+                  
+                    <div class="custom-content">
+                      <p class="custom-name">Tortuga</p>
+                  
+                      <div class="custom-description">
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis
+                          perferendis hic asperiores quibusdam quidem voluptates doloremque
+                          reiciendis nostrum harum. Repudiandae?
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+            </div>
+            
+        </div>
+        <div class="rickroll">
+            <a class="custom-button" href="#" onclick="reproducirMusica()">
+                Ver más...
+            </a>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div id="tienda">
+            <div id="redes-sociales">
+                <a href="#"> <i class="fa-brands fa-facebook"></i> Facabook</a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i> Twitter</a>
+            </div>
+            <p>
+                &copy; 2023. TIENDA DE MASCOTAS.
+            </p>
+        </div>
+        <div id="llamanos">
+            <div>
+                <h4>Contactanos</h4>
+                <a href="https://api.whatsapp.com/send?phone=51999888777" target="_blank">+51 999 888 777</a>
+            </div>
+            <div class="texto-contactanos">
+                <p>Siempre juntos por los animales</p>
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="mascotas-servicios">
+            <div>
+                <h4>Mascotas que buscan adopcion</h4>
+                <a href="mascotas.html">Perros</a>
+                <a href="mascotas.html">Gatos</a>
+                <a href="mascotas.html">Conejos</a>
+                <a href="mascotas.html">Aves</a>
+                <a href="mascotas.html">Exoticos</a>
+            </div>
+            <div>
+                <h4>Servicios</h4>
+                <a href="servicios.html">Baño a las mascotas</a>
+                <a href="servicios.html">Revisión medica</a>
+                <a href="servicios.html">Reservas</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    var imagenesFondo = ['./img/gif2.gif', './img/gif3.gif', './img/gif4.gif'];
+    var index = 0;
+
+    function cambiarFondo() {
+        document.getElementById('banner').style.backgroundImage = "url('" + imagenesFondo[index] + "')";
+        index++;
+        if (index === imagenesFondo.length) {
+            index = 0;
+        }
+    }
+
+    setInterval(cambiarFondo, 3000);
+
+    filterSelection("all")
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDiv");
+        if (c == "all") c = "";
+        // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+    }
+
+    // Show filtered elements
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+            }
+        }
+    }
+
+    // Hide elements that are not selected
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current control button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+        });
+    }
+
+        function reproducirMusica() {
+            // Crea un elemento de audio
+            var audio = new Audio('./media/Rick Roll.mp3');
+
+            // Reproduce la canción
+            audio.play();
+        }
+
+</script>
+
+</html>

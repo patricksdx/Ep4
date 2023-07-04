@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://kit.fontawesome.com/c888b7b310.js" crossorigin="anonymous"></script>
+</head>
+
+<script>
+    function menu() {
+        var x = document.querySelector(".topnav1");
+        if (x.className === "topnav1") {
+            x.className += " topnav2";
+        } else {
+            x.className = "topnav1";
+        }
+    }
+</script>
+
+<body>
+
+    <header>
+        <div id="header">
+            <div id="logo">
+                <a href="index.html">
+                    <i class="fa-solid fa-paw"></i>
+                    AmigosPeludos
+                </a>
+            </div>
+            <div id="icons">
+                <a href="javascript:void(0)" onclick="menu()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <nav class="topnav1">
+                <a href="mascotas.html">Mascotas</a>
+                <a href="blog.html">Blog</a>
+                <a href="contactanos.html">Contactanos</a>
+                <a href="servicios.html">Servicios</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="banner">
+        <div>
+            <h1>Contactanos para adoptar</h1>
+        </div>
+    </div>
+
+    <main>
+        <section class="formulario">
+            <div id="img-formulario">
+                <div>
+                    <h3>Contactanos :D</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores pariatur qui similique adipisci
+                        iure, est molestias voluptatum porro tempora quidem ipsa itaque dicta libero repudiandae
+                        excepturi distinctio doloribus exercitationem illum!</p>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Escribenos y reserva tu cita</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ninja">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required placeholder="Demente">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required placeholder="ejemplo@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Número:</label>
+                        <input type="text" id="numero" name="numero" required placeholder="+51 999 888 777">
+                    </div>
+                    <div class="form-group">
+                        <label for="comentario">Comentario:</label>
+                        <textarea id="comentario" name="comentario" placeholder="Ingrese su comentario" rows="5"
+                            required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="animal">Animal favorito:</label>
+                        <select id="animal" name="animal">
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="pajaro">Pájaro</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="tienda">
+            <div id="redes-sociales">
+                <a href="#"> <i class="fa-brands fa-facebook"></i> Facabook</a>
+                <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="#"> <i class="fa-brands fa-twitter"></i> Twitter</a>
+            </div>
+            <p>
+                &copy; 2023. TIENDA DE MASCOTAS.
+            </p>
+        </div>
+        <div id="llamanos">
+            <div>
+                <h4>Contactanos</h4>
+                <a href="https://api.whatsapp.com/send?phone=51999888777" target="_blank">+51 999 888 777</a>
+            </div>
+            <div class="texto-contactanos">
+                <p>Siempre juntos por los animales</p>
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="mascotas-servicios">
+            <div>
+                <h4>Mascotas que buscan adopcion</h4>
+                <a href="mascotas.html">Perros</a>
+                <a href="mascotas.html">Gatos</a>
+                <a href="mascotas.html">Conejos</a>
+                <a href="mascotas.html">Aves</a>
+                <a href="mascotas.html">Exoticos</a>
+            </div>
+            <div>
+                <h4>Servicios</h4>
+                <a href="servicios.html">Baño a las mascotas</a>
+                <a href="servicios.html">Revisión medica</a>
+                <a href="servicios.html">Reservas</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+    var imagenesFondo = ['./img/gif2.gif', './img/gif3.gif', './img/gif4.gif', './img/gif1.gif'];
+    var index = 0;
+
+    function cambiarFondo() {
+        document.getElementById('banner').style.backgroundImage = "url('" + imagenesFondo[index] + "')";
+        index++;
+        if (index === imagenesFondo.length) {
+            index = 0;
+        }
+    }
+
+    setInterval(cambiarFondo, 3000);
+</script>
+
+</html>

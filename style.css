@@ -1,0 +1,884 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* BARRA DE NAVEGACION */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+}
+
+#header {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    margin: 0 auto;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo a {
+    display: inline-block;
+    padding: 20px;
+    color: #0A3143;
+    position: relative;
+
+    font-family: LeelawUI;
+    z-index: 2;
+    display: flex;
+}
+
+#logo a i {
+    margin-right: 5px;
+}
+
+.topnav1 {
+    margin: auto;
+    width: 80%;
+    text-align: end;
+    position: absolute;
+    z-index: 1;
+}
+
+.topnav1 a {
+    color: #0A3143;
+    font-family: LeelawUI;
+    padding: 20px 20px 10px;
+
+    position: relative;
+    border: none;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.topnav1 a:hover {
+    color: #276E90;
+}
+
+.topnav1 a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #276E90;
+    transition: width 0.3s ease;
+}
+
+.topnav1 a:hover::before {
+    width: 100%;
+}
+
+#icons {
+    margin: auto 20px auto auto;
+    width: 10%;
+    text-align: end;
+}
+
+#icons i {
+    margin: auto 5px;
+    color: #0A3143;
+}
+
+a .fa-bars {
+    display: none;
+}
+
+#icons .fa-bars:hover {
+    color: #276E90;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#icons .fa-cart-shopping:hover {
+    color: #276E90;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+/* BANNER*/
+#banner {
+    display: flex;
+    justify-content: flex-start;
+    background-image: url(./img/gif1.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+    animation: animation-intro 1s ease;
+}
+
+#banner>div {
+    width: 45%;
+    padding: 5%;
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0));
+}
+
+#banner h1 {
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    font-family: LeelawUI;
+    text-align: left;
+    margin: 45% 0px 25px 100px;
+    text-shadow: 5px 5px 5px rgb(22, 21, 21);
+}
+
+#banner p {
+    text-shadow: 5px 5px 5px rgb(22, 21, 21);
+    text-align: left;
+    margin: 0px 0px 0px 100px;
+    color: #fff;
+    font-size: 1.25em;
+}
+
+#banner a {
+    margin: 20px 0px 0px 100px;
+}
+
+/* QUIENES SOMOS SECTION */
+.quienes-somos {
+    display: flex;
+    width: 50%;
+    margin: 75px auto;
+}
+
+.somos-img {
+    width: 50%;
+}
+
+.somos-img img {
+    width: 100%;
+}
+
+.somos-contenido {
+    width: 50%;
+}
+
+.somos-contenido h2 {
+    margin: 10px 20px;
+}
+
+.somos-contenido p {
+    margin: 0px 20px;
+}
+
+/* CATEGORIA MASCOTAS */
+#h2-mascotas {
+    text-align: center;
+    font-family: LeelawUI;
+    margin: 10px 0px;
+}
+
+.categoria-mascotas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.categoria-mascotas>div {
+    width: 25%;
+    margin: 10px;
+}
+
+.custom-card {
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.custom-image {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.75;
+    transition: opacity 0.3s;
+}
+
+.custom-card:hover .custom-image {
+    opacity: 0.5;
+}
+
+.custom-content {
+    position: relative;
+    padding: 1rem;
+}
+
+.custom-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.custom-description {
+    margin-top: 18rem;
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.custom-description p {
+    color: white;
+}
+
+.custom-card:hover .custom-description {
+    transform: none;
+    opacity: 1;
+}
+
+/* BLOG ARTICULO */
+
+.blog {
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 25px auto 50px;
+    justify-content: center;
+}
+
+.video-youtube {
+    width: 50%;
+    margin: 20px 0px;
+}
+
+.container-frame {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.article-card {
+    width: 40%;
+    margin: 20px;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.article-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.card-image {
+    height: 14rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    background-color: #fff;
+    padding: 1rem;
+}
+
+.card-date {
+    display: block;
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.card-title-link {
+    text-decoration: none;
+}
+
+.card-title {
+    margin-top: 0.125rem;
+    font-size: 1.125rem;
+    color: #111827;
+}
+
+.card-description {
+    margin-top: 0.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 0.875rem;
+    line-height: 1.625;
+    color: #6b7280;
+}
+
+/* SLIDER INFINITO */
+.slider {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 10s linear infinite;
+    width: calc(100px * 14);
+}
+
+.slider .slide {
+    width: 100px;
+}
+
+.slider .slide img {
+    width: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-200px * 7));
+        transform: translateX(calc(-100px * 7));
+    }
+}
+
+.colaboradores {
+    text-align: center;
+    font-family: LeelawUI;
+    font-size: 0.8em;
+    padding-bottom: 60px;
+}
+
+/* FOOTER */
+footer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 20px;
+}
+
+#tienda {
+    width: 25%;
+}
+
+#redes-sociales {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+#llamanos {
+    width: 25%;
+}
+
+.texto-contactanos {
+    margin: 20px 0px 0px;
+}
+
+#mascotas-servicios {
+    width: 35%;
+    display: flex;
+    justify-content: end;
+}
+
+#mascotas-servicios div {
+    flex-direction: column;
+    display: flex;
+    margin: 0px 50px;
+}
+
+footer h4 {
+    font-size: 1em;
+    font-family: LeelawUI;
+    margin: 20px 0px;
+}
+
+footer a {
+    color: #0E2046;
+    font-size: 1em;
+    margin: 5px 0px;
+}
+
+footer p {
+    text-align: justify;
+    font-family: LeelawUI;
+}
+
+/* BOTON */
+.custom-button {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px;
+    outline: none;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    color: white;
+
+    border-radius: 10px;
+    font-family: LeelawUI;
+    background-color: #0A3143 ;
+}
+
+.custom-button:hover {
+    color: white;
+    background-color: #276E90 ;
+}
+
+/* MASCOTAS PAGINA */
+
+/* FILTRO DIVS */
+.container-slider {
+    overflow: hidden;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px auto 50px;
+    width: 80%;
+}
+
+.filterDiv {
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin: 20px 10px;
+    display: none;
+    /* Hidden by default */
+}
+
+.filterDiv a {
+    width: 100%;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
+
+.btn {
+    color: #0A3143;
+    font-family: LeelawUI;
+    padding: 15px 30px 10px;
+
+    position: relative;
+    border: none;
+    transition: width 0.3s ease;
+    overflow: hidden;
+
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #276E90;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #276E90;
+    transition: width 0.3s ease;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+#myBtnContainer {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* BLOG PAGINA */
+
+.texto-blog {
+    text-align: center;
+    margin: 40px 0px 0px;
+    font-family: LeelawUI;
+}
+
+.section-blog {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.blog-pequeño {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.section-blog .article-card {
+    width: 35%;
+}
+
+.blog-pequeño .noticias-relevantes {
+    width: 20%;
+    margin: 20px;
+}
+
+/* CONTACTANOS FORMULARIO */
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 100px 40px;
+}
+
+#img-formulario {
+    background-image: url(./img/camaleon.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30%;
+    color: white;
+    font-family: LeelawUI;
+}
+
+#img-formulario div {
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0));
+    width: 80%;
+    height: 80%;
+    padding: 10%;
+}
+
+#img-formulario h3 {
+    padding-top: 80%;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 30%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: LeelawUI;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group button {
+    background-color: #0A3143;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.form-group button:hover {
+    background-color: #276E90;
+}
+
+/* SERVICIOS */
+
+.custom-table {
+    font-family: LeelawUI;
+    background-color: #f2f2f2;
+    overflow-x: auto;
+  }
+
+  .custom-table table {
+    min-width: 100%;
+    border-collapse: collapse;
+  }
+
+  .custom-table th,
+  .custom-table td {
+    padding: 0.5rem;
+    border: 1px solid #e5e7eb;
+  }
+
+  .custom-table th {
+    font-weight: 500;
+    text-align: left;
+    background-color: #ffffff;
+    color: #1f2937;
+  }
+
+  .custom-table td {
+    color: #4b5563;
+  }
+
+  .custom-table tr:nth-child(odd) {
+    background-color: #f9fafb;
+  }
+
+  .baño-mascotas {
+    margin: 100px 100px 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .elementos-baño {
+    width: 35%;
+  }
+  .elementos-baño h3{
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px 0px;
+    font-family: LeelawUI;
+  }
+  .elementos-baño p {
+    text-align: center;
+    font-size: 1em;
+    font-family: LeelawUI;
+    margin: 0px 40px;
+  }
+  .img-baño {
+    margin: 0px auto;
+  }
+  .img-baño img {
+    width: 100%;
+  }
+  .img-baño video {
+    width: 100%;
+  }
+  .elementos-tarifa {
+    width: 50%;
+    font-family: LeelawUI;
+    margin: 0px auto 50px;
+  }
+  .elementos-tarifa h3 {
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+  .rickroll {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0px 0px 50px;
+  }
+
+@media screen and (max-width: 768px) {
+
+    /* BARRA DE NAVEGACION */
+    #header,
+    main {
+        width: 100%;
+    }
+
+    .topnav1 {
+        display: none;
+    }
+
+    .topnav1 a {
+        display: block;
+    }
+
+    .topnav2 {
+        display: block;
+        position: absolute;
+        width: 100%;
+        background-color: #ffffff;
+        text-align: center;
+        top: 60px;
+    }
+
+    #logo {
+        width: 50%;
+    }
+
+    #icons a {
+        padding: 0px 10px;
+    }
+
+    a .fa-solid {
+        display: block;
+    }
+
+    /* BANNER */
+    #banner {
+        background-position: center;
+    }
+
+    #banner div {
+        width: 100%;
+        padding-top: 235px;
+        text-align: center;
+    }
+
+    #banner h1 {
+        text-align: center;
+        margin: 25% auto 40px;
+        font-size: 3em;
+    }
+
+    #banner p {
+        text-align: center;
+        margin: auto;
+    }
+
+    #banner a {
+        margin: 15px auto;
+    }
+
+    /* QUIENES SOMOS */
+    .quienes-somos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px 0px 35px;
+    }
+
+    .somos-contenido {
+        width: 100%;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .somos-img {
+        width: 100%;
+    }
+
+    /* CATEGORIA MASCOTAS */
+    .categoria-mascotas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categoria-mascotas div {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .custom-card {
+        width: 100%;
+    }
+
+    /* COMENTARIOS */
+    .article-card {
+        width: 100%;
+    }
+
+    .video-youtube {
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    footer {
+        width: 100%;
+        display: block;
+        padding: 0px;
+    }
+
+    #tienda,
+    #llamanos,
+    #mascotas-servicios {
+        width: 100%;
+        padding: 10px 0px 20px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    footer p {
+        text-align: center;
+    }
+
+    /* MASCOTAS SECTION */
+    .filterDiv {
+        width: 100%;
+    }
+
+    .container-slider {
+        flex-direction: column;
+    }
+
+    /* BLOG PAGINA */
+    .blog-pequeño .noticias-relevantes {
+        width: 45%;
+        margin: 9px;
+    }
+
+    .section-blog .article-card {
+        width: 50%;
+    }
+
+    /*FORMULARIO*/
+    .formulario{
+        flex-direction: column;
+    }
+    #img-formulario {
+        width: 100%;
+    }
+    .container{
+        width: 85%;
+    }
+    /* SERVICIOS */
+    .baño-mascotas {
+        flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    }
+    .elementos-baño {
+        width: 100%;
+    }
+    .elementos-baño p {
+        margin-bottom: 20px;
+    }
+    .elementos-tarifa {
+        width: 90%;
+    }
+}
+
+@font-face {
+    font-family: LeelawUI;
+    src: url(./fonts/LeelawUI.ttf);
+}
